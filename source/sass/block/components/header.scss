@@ -1,0 +1,48 @@
+.header {
+    overflow: hidden;
+    font-weight: 600;
+    background: #1c1c1c;
+    
+    &__promo {
+        background: #9f8750;
+        color: $black;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    &__geo-and-contacts {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        padding: 20px 0 0 0;
+    }
+
+    &__geo,
+    &__contacts {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    &__searchForm-sendField {
+        width: 20%;
+    }
+
+    &__geo-phone {
+        color: $white;
+    }
+
+    &__searchForm {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    &__userList {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+}
+
+@media (max-width: $tablet-width) {
+    .header {
+    }
+}
