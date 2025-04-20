@@ -32,9 +32,11 @@ a {
     text-decoration: none;
     cursor: pointer;
     color: $white;
+    transition: 0.1s ease-in-out;
 
     &:hover {
         opacity: 0.8;
+        color: #9f8750;
     }
 
     &:active {
