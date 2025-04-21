@@ -2,7 +2,7 @@
     overflow: hidden;
     font-weight: 600;
     background: #1c1c1c;
-    
+
     &__promo {
         font-weight: 600;
         font-size: 16px;
@@ -168,6 +168,7 @@
         font-size: 20px;
         line-height: 130%;
         color: $white;
+        margin: 0 67px 0 0;
     }
 
     &__navButton {
@@ -182,6 +183,7 @@
         height: 36px;
         background-color: #9f8750;
         color: $white;
+        margin: 0 20px 0 0;
     }
 
     &__navList {

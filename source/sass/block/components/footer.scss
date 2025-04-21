@@ -1,6 +1,74 @@
 .footer {
     overflow: hidden;
+    background-color: $black;
+    color: $white;
 
+    &__infoBlock {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    &__slogan {
+        font-family: "Oswald";
+        display: flex;
+        flex-flow: column nowrap;
+        margin: 0 50px 0 0;
+    }
+
+    &__subText {
+        font-size: 15px;
+    }
+
+    &__searchForm-sendField {
+        width: 174px;
+        height: 40px;
+        border-radius: 6px;
+        margin: 0 20px 0 0;
+    }
+
+    &__sloganText {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 130%;
+        color: $white;
+        margin: 0 67px 0 0;
+    }
+
+    &__subText {
+        font-weight: 400;
+        font-size: 15px;
+    }
+
+    &__contacts {
+        display: flex;
+        flex-flow: column wrap;
+        max-height: 330px;
+        margin: 0 0 40px 0;
+    }
+
+    &__contactsList {
+        display: flex;
+        flex-flow: column nowrap;
+
+        &:not(:last-child) {
+            margin: 0 0 30px 0;
+        }
+    }
+
+    &__contactsItem {
+        font-weight: 400;
+        font-size: 14px;
+
+        &:first-child {
+            font-weight: 600;
+            font-size: 18px;
+            margin: 0 0 15px 0;
+        }
+
+        &:not(:last-child) {
+            margin: 0 0 8px 0;
+        }
+    }
 }
 
 @media (max-width: $tablet-width) {
