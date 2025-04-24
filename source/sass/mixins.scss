@@ -48,48 +48,19 @@
     }
 }
 
-@mixin main-title {
-    font-weight: 800;
-    font-size: 45px;
-    line-height: 55px;
-    text-transform: uppercase;
+@mixin button {
+    display: flex;
+    padding: 9px 5px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background: #9f8750;
+    color: $white;
+    border: none;
+    border-radius: 6px;
 
-    @media (max-width: $tablet-width) {
-        font-weight: 800;
-        font-size: 35px;
-        line-height: 43px;
-        text-transform: uppercase;
-    }
-
-    @media (max-width: $mobile-width) {
-        font-weight: 800;
-        font-size: 22px;
-        line-height: 27px;
-        text-transform: uppercase;
-    }
-}
-
-@mixin second-title {
-    font-weight: 800;
-    font-size: 43px;
-    line-height: 52px;
-    text-transform: uppercase;
-}
-
-@mixin description {
-    font-weight: 500;
-    font-size: 25px;
-    line-height: 30px;
-
-    @media (max-width: $tablet-width) {
-        font-weight: 500;
-        font-size: 22px;
-        line-height: 27px;
-    }
-
-    @media (max-width: $mobile-width) {
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 20px;
+    &:hover {
+        background: #8c7849;
+        color: $white;
     }
 }

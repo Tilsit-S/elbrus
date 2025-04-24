@@ -2,8 +2,10 @@
 
 // components
 
-@import "block/components/header.scss", "block/components/footer.scss";
+@import "block/components/header.scss", "block/components/promo.scss", "block/components/footer.scss";
 
 // subcomponents
+
+@import "block/subcomponents/card.scss";
 
 //@import "block/subcomponents/card.scss";

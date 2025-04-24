@@ -54,8 +54,14 @@
             margin: 0 0 30px 0;
         }
 
-        &:nth-child(1) {
-
+        &:last-child .footer__contactsItem:not(:first-child) {
+            display: flex;
+            flex-flow: row nowrap;
+            width: 40px;
+            height: 40px;
+            border: none;
+            border-radius: 6px;
+            background-color: $white;
         }
     }
 
@@ -72,6 +78,12 @@
         &:not(:last-child) {
             margin: 0 0 8px 0;
         }
+    }
+
+    &__privacy {
+        font-weight: 400;
+        font-size: 12px;
+        margin: 0 0 40px 0;
     }
 }
 

@@ -1,0 +1,70 @@
+.promo {
+    overflow: hidden;
+
+    &__wrapper {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    &__dishes {
+        position: relative;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-end;
+        align-items: center;
+        font-family: "Oswald";
+        width: 287px;
+        height: 435px;
+        padding: 20px 10px;
+        border-radius: 6px;
+        background: rgba(0, 0, 0, 0.17);
+        color: $white;
+    }
+
+    &__cardName {
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 130%;
+        margin-bottom: auto;
+    }
+
+    &__cardDescription {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 130%;
+        text-align: center;
+    }
+
+    &__cardLink {
+        @include button;
+        font-family: "OpenSans";
+        min-width: 107px;
+        font-weight: 600;
+        font-size: 14px;
+    }
+
+    &__background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+
+    &__sales {
+        display: flex;
+        flex-flow: column nowrap;
+    }
+
+    &__salesDescription {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    &__salesLink {
+        color: $black;
+    }
+
+    &__salesList {
+        height: 369px;
+    }
+}

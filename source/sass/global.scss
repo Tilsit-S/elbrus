@@ -26,6 +26,7 @@ body {
 main {
     position: relative;
     z-index: 1;
+    background: #f3f7f8;
 }
 
 a {
@@ -81,16 +82,13 @@ ul {
     @include breakpoint;
 }
 
-.button {
+button {
     cursor: pointer;
+    border: none;
 
-    &.black {
-        background-color: #1d2931;
-        transition: 0.3s ease-in-out;
-
-        &:active {
-            opacity: 0.8;
-        }
+    &:hover {
+        opacity: 0.8;
+        transition: 0.3s;
     }
 }
 
