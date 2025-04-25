@@ -1,4 +1,5 @@
 .slideCard {
+    overflow: hidden;
     position: relative;
     display: flex;
     flex-flow: column nowrap;
@@ -6,6 +7,8 @@
     height: 243px;
     padding: 20px;
     background: $white;
+    border: 1px solid #d9d9d9;
+    border-radius: 6px;
     z-index: -1;
 
     &__image {

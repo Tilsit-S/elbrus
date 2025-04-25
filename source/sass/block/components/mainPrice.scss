@@ -4,14 +4,27 @@
         position: relative;
     }
 
+    &__title {
+        font-family: "Oswald";
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 130%;
+    }
+
     &__slider {
         overflow: hidden;
-        //position: relative;
         margin: 20px 0;
     }
 
     &__slide {
         position: relative;
+    }
+
+    &__slideCard {
+
+        &:hover {
+            opacity: 1;
+        }
     }
 
     .slick-slider{
@@ -56,12 +69,12 @@
 
     .slick-prev.slick-arrow {
         left: -20px;
-        background-image: url('../img/main/features/arrow.svg');
+        background-image: url('../img/main/mainPrice/arrow.svg');
     }
 
     .slick-next.slick-arrow {
         right: 0;
-        background-image: url('../img/main/features/arrow.svg');
+        background-image: url('../img/main/mainPrice/arrow.svg');
         transform: rotate(180deg);
     }
 

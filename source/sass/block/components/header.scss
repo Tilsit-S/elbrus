@@ -1,16 +1,16 @@
 .header {
     overflow: hidden;
     font-weight: 600;
-    background: #1c1c1c;
+    background: #002c3f;
 
     &__promo {
         font-weight: 600;
         font-size: 16px;
         line-height: 130%;
-        background: #9f8750;
+        background: #e3970c;
         color: $black;
         text-align: center;
-        padding: 10px 0;
+        padding: 9px 0 6px 0;
 
         a {
             color: $black;
@@ -21,7 +21,7 @@
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-between;
-        padding: 20px 0 0 0;
+        padding: 23px 0 0 0;
         margin: 0 0 20px 0;
     }
 
@@ -31,15 +31,25 @@
         flex-flow: row nowrap;
     }
 
+    &__geo-city {
+        margin: 0 15px 0 0;
+    }
+
+    &__contacts-phone {
+        margin: 0 0 0 14px;
+    }
+
     &__geo-city,
     &__geo-phone,
     &__contacts-mail,
     &__contacts-phone {
         display: inline-flex;
         align-items: center;
+        font-weight: 600;
+        font-size: 14px;
 
         svg {
-            margin: 0 10px 0 0;
+            margin: 0 8px 0 0;
         }
     }
 
