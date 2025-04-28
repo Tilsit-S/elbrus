@@ -3,24 +3,39 @@
     margin: 0 0 50px 0;
 
     &__title {
-        font-family: "Oswald";
-        font-weight: 500;
-        font-size: 28px;
-        line-height: 130%;
+        @include title;
         margin: 0 0 20px 0;
     }
 
     &__banner {
-        @include image-wrapper;
         position: relative;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-end;
         width: 100%;
         height: 404px;
+        padding: 30px
     }
 
     &__imageWrapper {
+        @include image-wrapper;
         position: absolute;
         top: 0;
         left: 0;
+        border-radius: 6px;
         z-index: -1;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__description {
+        font-family: "Oswald";
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 130%;
+        color: $white;
     }
 }

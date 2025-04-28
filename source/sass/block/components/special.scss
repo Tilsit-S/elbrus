@@ -53,9 +53,7 @@
     }
 
     &__formTitle {
-        font-weight: 500;
-        font-size: 28px;
-        line-height: 130%;
+        @include title;
         margin: 0 0 30px 0;
     }
 

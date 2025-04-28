@@ -3,10 +3,7 @@
     margin: 0 0 50px 0;
 
     &__title {
-        font-family: "Oswald";
-        font-weight: 500;
-        font-size: 28px;
-        line-height: 130%;
+        @include title;
         margin: 0 0 20px 0;
     }
 
