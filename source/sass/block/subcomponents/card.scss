@@ -109,6 +109,6 @@
     }
 
     &__basketButton {
-        @include button;
+        @include grayButton;
     }
 }

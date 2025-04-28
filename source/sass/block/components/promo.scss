@@ -13,6 +13,7 @@
         flex-flow: column nowrap;
         justify-content: flex-end;
         align-items: center;
+        flex-shrink: 0;
         font-family: "Oswald";
         width: 287px;
         height: 435px;
@@ -38,7 +39,7 @@
     }
 
     &__cardLink {
-        @include button;
+        @include grayButton;
         font-family: "OpenSans";
         min-width: 107px;
         font-weight: 600;

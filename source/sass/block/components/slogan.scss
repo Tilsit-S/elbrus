@@ -1,0 +1,26 @@
+.slogan {
+    overflow: hidden;
+    margin: 0 0 50px 0;
+
+    &__title {
+        font-family: "Oswald";
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 130%;
+        margin: 0 0 20px 0;
+    }
+
+    &__banner {
+        @include image-wrapper;
+        position: relative;
+        width: 100%;
+        height: 404px;
+    }
+
+    &__imageWrapper {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+}
