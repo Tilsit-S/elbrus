@@ -1,44 +1,9 @@
-.advice {
+.blog {
     overflow: hidden;
-    margin-bottom: 10px;
 
     &__title {
         @include title;
-        margin: 0 0 30px 0;
-    }
-
-    &__salesLink {
-        display: inline-block;
-        position: relative;
-        font-weight: 400;
-        font-size: 16px;
-        padding: 0 20px 0 0;
-        margin: 0 0 30px 0;
-        color: $black;
-
-        &::before {
-            position: absolute;
-            top: 6px;
-            right: 0;
-            display: block;
-            content: "";
-            width: 8px;
-            height: 1px;
-            transform: rotate(45deg);
-            background: $black;
-        }
-
-        &::after {
-            position: absolute;
-            top: 12px;
-            right: 0;
-            display: block;
-            content: "";
-            width: 8px;
-            height: 1px;
-            transform: rotate(135deg);
-            background: $black;
-        }
+        margin: 0 0 20px 0;
     }
 
     &__tabs {
