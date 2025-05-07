@@ -64,4 +64,69 @@
             display: flex;
         }
     }
+
+
+
+
+
+
+
+
+
+    &__slider {
+        overflow: hidden;
+        margin: 20px 0;
+    }
+
+    &__slide {
+        position: relative;
+    }
+
+    &__slideCard {
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+
+    .slick-slider{
+        height: 100%;
+        margin: 0;
+        z-index: 1;
+    }
+
+    /* Слайдер запущен */
+    .slick-slider.slick-initialized{}
+
+    /* Слайдер с точками */
+    .slick-slider.slick-dotted{}
+
+    .slick-list {
+        //height: 243px;
+    }
+
+    /* Ограничивающая оболочка */
+    .slick-list {
+        overflow: visible;
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
+
+    /* Лента слайдов */
+    .slick-track{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        margin-bottom: 90px;
+    }
+
+    /* Слайд */
+    .slick-slide{
+        overflow: hidden;
+
+        &:not(:first-child) {
+            margin-left: 25px;
+        }
+    }
+    /* slider-end */
 }
