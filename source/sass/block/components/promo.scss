@@ -3,125 +3,94 @@
 
     &__wrapper {
         display: flex;
-        flex-flow: row nowrap;
+        flex-flow: column nowrap;
         padding: 50px 0 60px 0;
     }
 
-    &__dishes {
+    &__slide {
         position: relative;
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: flex-end;
-        align-items: center;
-        flex-shrink: 0;
-        font-family: "Oswald";
-        width: 287px;
-        height: 435px;
-        padding: 20px 10px;
-        margin: 0 20px 0 0;
-        border-radius: 6px;
-        background: rgba(0, 0, 0, 0.17);
-        color: $white;
     }
 
-    &__cardName {
+    &__banner {
+        @include image-wrapper;
+        flex-shrink: 0;
+        width: 100%;
+        height: auto;
+        border-radius: 6px;
+    }
+
+    &__bannerText {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        font-family: "Oswald";
         font-weight: 500;
         font-size: 40px;
         line-height: 130%;
-        margin-bottom: auto;
+        color: #fefefe;
     }
 
-    &__cardDescription {
-        font-weight: 500;
-        font-size: 24px;
-        line-height: 130%;
-        text-align: center;
+    .slick-slider{
+        overflow: hidden;
+        height: 100%;
+        margin: 0;
+        z-index: 2;
     }
 
-    &__cardLink {
-        @include grayButton;
-        font-family: "OpenSans";
-        min-width: 107px;
-        font-weight: 600;
-        font-size: 14px;
+    /* Слайдер запущен */
+    .slick-slider.slick-initialized{}
+
+    /* Слайдер с точками */
+    .slick-slider.slick-dotted{}
+
+    .slick-list {
     }
 
-    &__background {
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: -1;
+    /* Ограничивающая оболочка */
+    .slick-list {
+        overflow: visible;
+        margin: 0 auto;
+        margin-bottom: 40px;
     }
 
-    &__salesDescription {
+    /* Лента слайдов */
+    .slick-track{
         display: flex;
-        align-items: baseline;
+        flex-direction: row;
+        align-items: flex-start;
+        margin-bottom: 10px;
     }
 
-    &__sales {
-        display: flex;
-        flex-flow: column nowrap;
+    /* Слайд */
+    .slick-slide{
+        overflow: hidden;
     }
 
-    &__salesTitle {
-        font-family: "Oswald";
-        font-weight: 500;
-        font-size: 32px;
-        line-height: 130%;
-        margin: 0 30px 0 0;
-    }
-
-    &__salesLink {
-        position: relative;
-        font-weight: 400;
-        font-size: 16px;
-        padding: 0 20px 0 0;
-
-        &::before {
-            position: absolute;
-            top: 6px;
-            right: 0;
-            display: block;
-            content: "";
-            width: 8px;
-            height: 1px;
-            transform: rotate(45deg);
-            background: $black;
-        }
-
-        &::after {
-            position: absolute;
-            top: 12px;
-            right: 0;
-            display: block;
-            content: "";
-            width: 8px;
-            height: 1px;
-            transform: rotate(135deg);
-            background: $black;
-        }
-    }
-
-    &__salesDescription {
+    .slick-dots {
         display: flex;
         flex-flow: row nowrap;
-        margin: 0 0 20px 0;
+        justify-content: space-between;
+        width: 89px;
+        margin: 0 auto;
     }
 
-    &__salesLink {
-        color: $black;
+    .slick-dots li{
+        width: 10px;
+        height: 10px;
+        border: none;
+        border-radius: 50%;
+        margin-bottom: 5px;
+        background-color: #D3D3D3;
     }
 
-    &__salesList {
-        display: flex;
-        flex-flow: row nowrap;
-        height: 369px;
+    /* Активная точка */
+    .slick-dots li.slick-active{
+        background-color: #242801;
     }
 
-    &__salesItem {
-
-        &:not(:last-child) {
-            margin: 0 20px 0 0;
-        }
+    /* Элемент точки */
+    .slick-dots li button{
+        display: none;
     }
+    /* slider-end */
 }

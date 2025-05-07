@@ -1,12 +1,7 @@
 @mixin breakpoint {
-    width: 1171px;
+    width: 1178px;
     margin: 0 auto;
     padding: 0;
-
-    @media (max-width: 1300px) {
-        width: 100%;
-        padding: 0 40px;
-    }
 
     @media (max-width: 1000px) {
         width: 100%;
@@ -29,23 +24,6 @@
     line-height: $line-height;
     font-weight: $font-width;
     color: $font-color;
-}
-
-@mixin magnifying-glass {
-    &:hover {
-        &::after {
-            position: absolute;
-            content: "";
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: rgba(29, 41, 49, 0.5);
-            background-image: url("../img/main/magnifying-glass-icon.svg");
-            background-position: center;
-            background-repeat: no-repeat;
-        }
-    }
 }
 
 @mixin image-wrapper {

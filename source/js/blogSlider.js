@@ -7,13 +7,15 @@ $(document).ready(function(){
         infinite: false,
         slidesToShow: 3,
         slidesToScroll: 1,
+        swipe: false,
         responsive: [
             {
-                breakpoint: 1743,
+                breakpoint: 800,
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 1,
                     dots: true,
+                    swipe: true,
                 },
             },
             {
