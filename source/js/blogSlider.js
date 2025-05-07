@@ -16,6 +16,14 @@ $(document).ready(function(){
                     dots: true,
                 },
             },
+            {
+                breakpoint: 430,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    dots: true,
+                },
+            },
         ],
     }
     );
