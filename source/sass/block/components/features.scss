@@ -1,0 +1,64 @@
+.features {
+    overflow: hidden;
+    margin: 0 0 60px 0;
+
+    &__title {
+        @include title;
+        margin: 0 0 30px 0;
+    }
+
+    &__infoWrapper {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+    }
+
+    &__banner {
+        @include image-wrapper;
+        flex-shrink: 0;
+        width: 49.7%;
+        height: auto;
+    }
+
+    &__list {
+        display: flex;
+        flex-flow: column nowrap;
+        flex-shrink: 0;
+        width: 41.3%;
+        padding: 18px 0 0 0;
+    }
+
+    &__item {
+        display: flex;
+        flex-flow: column nowrap;
+
+        &:not(:last-child) {
+            margin: 0 0 23px 0;
+        }
+
+        p {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 134%;
+        }
+    }
+
+    &__itemName {
+        display: flex;
+        flex-flow: row nowrap;
+        margin: 0 0 10px 0;
+
+        img {
+            width: 24px;
+            height: 24px;
+            margin: 0 10px 0 0;
+        }
+
+        p {
+            font-family: "Oswald";
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 110%;
+        }
+    }
+}

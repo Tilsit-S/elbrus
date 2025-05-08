@@ -4,7 +4,7 @@
     &__wrapper {
         display: flex;
         flex-flow: column nowrap;
-        padding: 50px 0 60px 0;
+        padding: 60px 0 57px 0;
     }
 
     &__slide {
@@ -21,8 +21,8 @@
 
     &__bannerText {
         position: absolute;
-        bottom: 0;
-        left: 0;
+        bottom: 38px;
+        left: 40px;
         font-family: "Oswald";
         font-weight: 500;
         font-size: 40px;
@@ -50,7 +50,7 @@
     .slick-list {
         overflow: visible;
         margin: 0 auto;
-        margin-bottom: 40px;
+        margin-bottom: 31px;
     }
 
     /* Лента слайдов */
@@ -70,7 +70,7 @@
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-between;
-        width: 89px;
+        width: 83px;
         margin: 0 auto;
     }
 

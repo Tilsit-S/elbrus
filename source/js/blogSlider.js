@@ -2,7 +2,7 @@ $(document).ready(function(){
     $('.blog__slider').slick({
         arrows: false,
         dots: false,
-        variableWidth: true,
+        variableWidth: false,
         adaptiveHeight: false,
         infinite: false,
         slidesToShow: 3,
