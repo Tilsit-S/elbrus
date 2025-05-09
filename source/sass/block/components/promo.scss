@@ -94,3 +94,79 @@
     }
     /* slider-end */
 }
+
+@media (max-width: $tablet-width) {
+    .promo {
+
+        &__wrapper {
+            display: flex;
+            flex-flow: column nowrap;
+            padding: 40px 0 25px 0;
+        }
+
+        &__slide {
+            position: relative;
+        }
+
+        &__banner {
+            @include image-wrapper;
+            flex-shrink: 0;
+            width: 100%;
+            height: auto;
+            border-radius: 6px;
+        }
+
+        &__bannerText {
+            position: absolute;
+            bottom: 38px;
+            left: 40px;
+            font-family: "Oswald";
+            font-weight: 500;
+            font-size: 40px;
+            line-height: 130%;
+            color: #fefefe;
+        }
+
+        .slick-slider{
+            height: 100%;
+            margin: 0;
+        }
+
+        /* Ограничивающая оболочка */
+        .slick-list {
+            margin-bottom: 17px;
+        }
+
+        /* Лента слайдов */
+        .slick-track{
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            margin-bottom: 10px;
+        }
+
+        /* Слайд */
+        .slick-slide{
+        }
+
+        .slick-dots {
+            width: 72px;
+        }
+
+        .slick-dots li{
+            width: 8px;
+            height: 8px;
+        }
+
+        /* Активная точка */
+        .slick-dots li.slick-active{
+            background-color: #242801;
+        }
+
+        /* Элемент точки */
+        .slick-dots li button{
+            display: none;
+        }
+        /* slider-end */
+    }
+}

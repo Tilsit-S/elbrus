@@ -37,18 +37,29 @@
         }
     }
 
+    &__geo-and-contactsBlock {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        padding: 23px 11px 0 0;
+        margin: 0 0 9px 0;
+    }
+
     &__geo-and-contacts {
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-between;
-        padding: 23px 11px 0 0;
-        margin: 0 0 18px 0;
+        margin: 0 0 17px 0;
     }
 
     &__geo,
     &__contacts {
         display: flex;
         flex-flow: row nowrap;
+    }
+
+    &__contacts {
+        margin: 0 13px 0 0;
     }
 
     &__geo-city {
@@ -95,12 +106,17 @@
         }
     }
 
+    &__mainBlock {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
     &__searchForm {
     }
 
     &__logo {
         width: 174px;
-        margin: 0 24px 0 0;
+        margin: 0 24px 12px 0;
     }
 
     &__searchForm-searchToggle {
@@ -214,7 +230,7 @@
     &__navBar {
         display: flex;
         flex-flow: row nowrap;
-        margin: 0 0 19px 0;
+        margin: 0 0 1px 0;
     }
 
     &__navButton {
@@ -271,11 +287,13 @@
         padding: 9px 0 8px 0;
     }
 
+    &__geo-and-contactsBlock {
+        padding: 19px 11px 0 0;
+    }
+
     &__geo-and-contacts {
         display: none;
     }
-
-
 
     &__searchForm {
         padding: 17px 0 0 0;
