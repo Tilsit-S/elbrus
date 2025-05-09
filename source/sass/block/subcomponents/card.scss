@@ -13,6 +13,7 @@
     box-shadow: 0 4px 4px 0 rgba(58, 59, 60, 0.25);
     border-radius: 6px;
     transition: 0.5s;
+    cursor: pointer;
 
     &:hover {
         position: relative;
@@ -57,7 +58,7 @@
     &__likeButton {
         position: absolute;
         top: 0;
-        right: 0;
+        right: 5px;
         display: block;
         width: 24px;
         height: 24px;

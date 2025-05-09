@@ -3,11 +3,31 @@
     font-weight: 600;
     background: #002c3f;
 
+    &__wrapper {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    &__logo {
+        color: $white;
+
+        p {
+            font-family: "Oswald";
+            width: 131px;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 110%;
+            text-align: center;
+            color: $white;
+            margin: 0 47px 0 20px;
+        }
+    }
+
     &__promo {
         font-weight: 600;
         font-size: 16px;
         line-height: 130%;
-        background: #e3970c;
+        background: $orange;
         color: $black;
         text-align: center;
         padding: 9px 0 6px 0;
@@ -139,6 +159,12 @@
         width: 536px;
         margin: 0 25px 0 0;
         padding: 0 0 0 15px;
+
+        &::placeholder {
+            font-weight: 600;
+            font-size: 14px;
+            color: #a9a9a9;
+        }
     }
 
     &__searchForm-sendField,
@@ -191,17 +217,6 @@
         margin: 0 0 19px 0;
     }
 
-    &__slogan {
-        font-family: "Oswald";
-        width: 131px;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 110%;
-        text-align: center;
-        color: $white;
-        margin: 0 47px 0 20px;
-    }
-
     &__navButton {
         display: flex;
         justify-content: center;
@@ -212,7 +227,7 @@
         padding: 8px 5px;
         width: 110px;
         height: 36px;
-        background: #e3970c;
+        background: $orange;
         color: $white;
         margin: 0 25px 0 0;
 
@@ -249,5 +264,184 @@
 
 @media (max-width: $tablet-width) {
     .header {
+
+    &__promo {
+        font-weight: 400;
+        font-size: 14px;
+        padding: 9px 0 8px 0;
     }
+
+    &__geo-and-contacts {
+        display: none;
+    }
+
+
+
+    &__searchForm {
+        padding: 17px 0 0 0;
+    }
+
+    &__logo {
+        width: 174px;
+        margin: 0 24px 0 0;
+    }
+
+    &__searchForm-searchToggle {
+        display: flex;
+        flex-flow: row nowrap;
+        height: 100%;
+        padding: 2px;
+        margin: 0 24px 0 0;
+        border: 1px solid #d3d3d3;
+        border-radius: 6px;
+    }
+
+    &__searchForm-toggle {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        font-weight: 600;
+        font-size: 14px;
+        border-radius: 6px;
+        padding: 8px 20px;
+        width: 108px;
+        height: 100%;
+        background-color: transparent;
+        color: #a9a9a9;
+    }
+
+    .activeToggle {
+        justify-content: center;
+        border-radius: 6px;
+        padding: 8px 16px;
+        width: 108px;
+        height: 100%;
+        color: #02090c;
+        background: $white;
+    }
+
+    &__searchBar-wrapper {
+        position: relative;
+
+        &::after {
+            position: absolute;
+            content: '';
+            display: block;
+            top: 10px;
+            right: 37px;
+            width: 20px;
+            height: 20px;
+            background-image: url('../img/header/search.svg');
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+    }
+
+    &__searchBar {
+        width: 536px;
+        margin: 0 25px 0 0;
+        padding: 0 0 0 15px;
+
+        &::placeholder {
+            font-weight: 600;
+            font-size: 14px;
+            color: #a9a9a9;
+        }
+    }
+
+    &__searchForm-sendField,
+    &__searchBar {
+        height: 40px;
+        border-radius: 6px;
+    }
+
+    &__geo-phone {
+        color: $white;
+    }
+
+    &__searchForm {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        margin: 0 0 12px 0;
+    }
+
+    &__userList {
+        display: flex;
+        flex-flow: row nowrap;
+        height: 100%;
+    }
+
+    &__userItem {
+        display: flex;
+
+        &:hover {
+
+            svg {
+                path {
+                    stroke: #9f8750;
+                }
+            }
+        }
+
+        &:not(:last-child) {
+            margin: 0 5px 0 0;
+        }
+
+        a {
+            padding: 10px;
+        }
+    }
+
+    &__navBar {
+        display: flex;
+        flex-flow: row nowrap;
+        margin: 0 0 19px 0;
+    }
+
+    &__navButton {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border: none;
+        border-radius: 6px;
+        padding: 8px 5px;
+        width: 110px;
+        height: 36px;
+        background: $orange;
+        color: $white;
+        margin: 0 25px 0 0;
+
+        svg {
+            margin: 0 10px 0 0;
+        }
+    }
+
+    &__navList {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+    }
+
+    &__navItem {
+        border: none;
+        background-color: transparent;
+
+        &:not(:last-child) {
+            margin: 0 15px 0 0;
+        }
+
+        a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 8px 5px;
+            max-width: 190px;
+            height: 36px;
+        }
+    }
+}
 }

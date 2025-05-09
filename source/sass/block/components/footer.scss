@@ -1,6 +1,7 @@
 .footer {
     overflow: hidden;
     background-color: $black;
+    background: #002c3f;
     color: $white;
 
     &__wrapper {
@@ -10,77 +11,106 @@
     &__infoBlock {
         display: flex;
         flex-flow: row nowrap;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        width: 190px;
+        height: auto;
+        margin: 10px 0 15px 0;
     }
 
     &__slogan {
-        font-family: "Oswald";
         display: flex;
         flex-flow: column nowrap;
-        margin: 0 50px 0 0;
-    }
-
-    &__subText {
-        font-size: 15px;
-    }
-
-    &__searchForm-sendField {
-        width: 174px;
-        height: 40px;
-        border-radius: 6px;
-        margin: 0 20px 0 0;
+        flex-shrink: 0;
+        align-items: center;
+        text-align: center;
+        width: 11%;
+        margin: 0 10px 0 0;
     }
 
     &__sloganText {
+        font-family: "Oswald";
         font-weight: 500;
-        font-size: 20px;
-        line-height: 130%;
-        color: $white;
-        margin: 0 67px 0 0;
-    }
-
-    &__subText {
-        font-weight: 400;
         font-size: 15px;
+        line-height: 130%;
+        text-align: center;
     }
 
     &__contacts {
         display: flex;
-        flex-flow: column wrap;
-        max-height: 330px;
-        margin: 0 0 40px 0;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        flex-shrink: 0;
+        width: 66.5%;
+        padding: 12px 161px 0 0;
+        margin: 0 0 43px 0;
     }
 
-    &__contactsList {
+    &__contactsBlock {
         display: flex;
         flex-flow: column nowrap;
+        flex-shrink: 0;
+        margin: 0 10px 0 0;
 
-        &:not(:last-child) {
-            margin: 0 0 30px 0;
+        &:nth-child(3) {
+            width: 28%;
         }
 
-        &:last-child .footer__contactsItem:not(:first-child) {
-            display: flex;
-            flex-flow: row nowrap;
-            width: 40px;
-            height: 40px;
-            border: none;
-            border-radius: 6px;
-            background-color: $white;
+    }
+
+    &__contactsBlock:nth-child(3) {
+
+        .footer__contactsList:first-child {
+            margin: 0 0 46px 0;
         }
     }
 
     &__contactsItem {
         font-weight: 400;
         font-size: 14px;
+        line-height: 134%;
+
+        &:not(:last-child) {
+            margin: 0 0 8px 0;
+        }
 
         &:first-child {
             font-weight: 600;
             font-size: 18px;
             margin: 0 0 15px 0;
         }
+    }
+    
+    &__contactsList {
 
         &:not(:last-child) {
-            margin: 0 0 8px 0;
+            margin: 0 0 30px 0;
+        }
+    }
+
+    &__social {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    &__socialLink {
+        @include image-wrapper;
+
+        &:nth-child(1) {
+            margin: 0 5px 0 0;
+        }
+
+        a {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
         }
     }
 
