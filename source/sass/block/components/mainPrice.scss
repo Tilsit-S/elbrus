@@ -28,10 +28,10 @@
     }
 
     .priceCard {
-        //@include image-wrapper;
+        @include image-wrapper;
         overflow: hidden;
         position: relative;
-        display: inline-flex;
+        display: flex;
         flex-shrink: 0;
         flex-flow: column nowrap;
         width: 387px;
@@ -41,20 +41,20 @@
         border: 1px solid #d9d9d9;
         border-radius: 6px;
         z-index: -1;
-    
+
         &__image {
             @include image-wrapper;
             position: absolute;
             top: 0;
             left: 0;
             z-index: 1;
-    
+
             img {
-                //width: 100%;
-                //height: auto;
+                width: 100%;
+                height: auto;
             }
         }
-    
+
         &__title {
             position: absolute;
             top: 16px;
