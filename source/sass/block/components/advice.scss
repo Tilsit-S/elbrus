@@ -41,12 +41,45 @@
         }
     }
 
-    &__tabs {
+    &__tabsSlider {
         display: flex;
         justify-content: flex-start;
         text-align: center;
         margin-bottom: 30px;
     }
+
+    //tabsSlider
+    .slick-slider{
+        position: relative;
+        height: 100%;
+        margin: 0;
+    }
+
+    /* Слайдер запущен */
+    .slick-slider.slick-initialized{}
+
+    /* Ограничивающая оболочка */
+    .slick-list {
+        overflow: hidden;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    /* Лента слайдов */
+    .slick-track{
+        display: flex !important;
+        flex-direction: row;
+        width: 100%;
+        align-items: flex-start;
+        margin-bottom: 40px;
+    }
+
+    /* Слайд */
+    .slick-slide{
+        overflow: hidden;
+        height: auto;
+    }
+    // sliderEnd
 
     &__content {
         padding: 0 0 50px 0;
@@ -55,7 +88,32 @@
     &__advices-list {
         display: flex;
         flex-flow: row wrap;
+        justify-content: space-between;
         gap: 10px;
+    }
+
+    &__advices-item {
+        width: 24.3%;
+
+        @media (max-width: 1279px) {
+            width: 24%;
+        }
+
+        @media (max-width: 1000px) {
+            width: 32%;
+        }
+
+        @media (max-width: 768px) {
+            width: 49%;
+        }
+
+        @media (max-width: 768px) {
+            width: 48%;
+        }
+
+        @media (max-width: 500px) {
+            width: 100%;
+        }
     }
 
     &__tabs-item {

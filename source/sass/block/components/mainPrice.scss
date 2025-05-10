@@ -16,6 +16,14 @@
         flex-flow: row wrap;
         gap: 9px;
         margin: 0 0 31px 0;
+
+        @media (max-width: 700px) {
+            justify-content: space-between;
+        }
+
+        @media (max-width: 480px) {
+            gap: 8px;
+        }
     }
 
     &__item {
@@ -25,18 +33,32 @@
         &:hover {
             opacity: 1;
         }
+
+        @media (max-width: 1280px) {
+            width: 32%;
+        }
+
+        @media (max-width: 700px) {
+            width: 49%;
+        }
+
+        @media (max-width: 528px) {
+            width: 48%;
+        }
     }
 
     .priceCard {
-        @include image-wrapper;
+        //@include image-wrapper;
         overflow: hidden;
         position: relative;
         display: flex;
         flex-shrink: 0;
         flex-flow: column nowrap;
-        width: 387px;
-        height: 243px;
-        padding: 20px;
+        //width: 387px;
+        //height: 243px;
+        width: 100%;
+        height: auto;
+        //padding: 20px;
         background: $white;
         border: 1px solid #d9d9d9;
         border-radius: 6px;
@@ -44,7 +66,7 @@
 
         &__image {
             @include image-wrapper;
-            position: absolute;
+            position: relative;
             top: 0;
             left: 0;
             z-index: 1;
@@ -64,11 +86,36 @@
             line-height: 130%;
             color: $black;
             z-index: 2;
+            cursor: pointer;
+
+            @media (max-width: 960px) {
+                font-size: 16px;
+            }
+
+            @media (max-width: 480px) {
+                font-size: 14px;
+            }
         }
     }
 
     &__showMore {
         @include blackButton;
+        font-weight: 600;
+        font-size: 14px;
         margin: 0 auto;
+
+        @media (max-width: 1280px) {
+            width: 152px;
+            font-size: 16px;
+        }
+
+        @media (max-width: 768px) {
+            width: 124px;
+            font-size: 12px;
+        }
+
+        @media (max-width: 480px) {
+            width: 116px;
+        }
     }
 }

@@ -213,14 +213,12 @@
                     <h3 class="mainPrice__title">Основные категории</h3>
                     <ul class="mainPrice__list">
                         <li class="mainPrice__item">
-                            <a href="#" class="mainPrice__priceCard priceCard">
-                                <div class="priceCard__body">
-                                    <p class="priceCard__title">Кемпинг</p>
-                                    <div class="priceCard__image">
-                                        <img src="img/main/mainPrice/camp.png" alt="">
-                                    </div>
+                            <div class="mainPrice__priceCard priceCard">
+                                <a href="#" class="priceCard__title">Кемпинг</a>
+                                <div class="priceCard__image">
+                                    <img src="img/main/mainPrice/camp.png" alt="">
                                 </div>
-                            </a>
+                            </div>
                         </li>
                         <li class="mainPrice__item">
                             <a href="#" class="mainPrice__priceCard priceCard">
@@ -255,7 +253,7 @@
                         <li class="mainPrice__item">
                             <a href="#" class="mainPrice__priceCard priceCard">
                                 <div class="priceCard__body">
-                                    <p class="priceCard__title">Для похода</p>
+                                    <p class="priceCard__title">Охота</p>
                                     <div class="priceCard__image">
                                         <img src="img/main/mainPrice/expedition.png" alt="">
                                     </div>
@@ -282,16 +280,20 @@
                     <h2 class="advice__title">Рекомендуем</h2>
                     <a href="#" class="advice__salesLink">Новинки</a>
 
-                    <div class="advice__tabs" id="adviceTabs">
-                        <div class="advice__tabs-item active">Палатки</div>
-                        <div class="advice__tabs-item">Техника</div>
-                        <div class="advice__tabs-item">Снасти</div>
-                        <div class="advice__tabs-item">Оборудование</div>
-                        <div class="advice__tabs-item">Категория</div>
-                        <div class="advice__tabs-item">Категория</div>
-                        <div class="advice__tabs-item">Категория</div>
-                        <div class="advice__tabs-item">Категория</div>
+                    <div class="advice__tabsWrapper">
+                        <div class="advice__tabsSlider" id="adviceTabs">
+                            <div class="advice__tabs-item active">Палатки</div>
+                            <div class="advice__tabs-item">Техника</div>
+                            <div class="advice__tabs-item">Снасти</div>
+                            <div class="advice__tabs-item">Оборудование</div>
+                            <div class="advice__tabs-item">Категория</div>
+                            <div class="advice__tabs-item">Категория</div>
+                            <div class="advice__tabs-item">Категория</div>
+                            <div class="advice__tabs-item">Категория</div>
+                        </div>
                     </div>
+
+                    
 
                     <div class="advice__content">
                         <div class="advice__content-item active">
@@ -1266,6 +1268,7 @@
         <script src="js/main.js"></script>
         <script src="js/advTabs.js"></script>
         <script src="js/blogTabs.js"></script>
+        <script src="js/adviceTabs.js"></script>
 
     </body>
 </html>
