@@ -8,9 +8,10 @@ $(document).ready(function(){
         swipe: false,
         slidesToShow: 4,
         slidesToScroll: 1,
+        swipe: false,
         responsive: [
             {
-                breakpoint: 1130,
+                breakpoint: 1080,
                 settings: {
                     swipe: true,
                     slidesToShow: 1,
@@ -18,18 +19,27 @@ $(document).ready(function(){
                 },
             },
             {
-                breakpoint: 834,
+                breakpoint: 960,
                 settings: {
                     swipe: true,
                     slidesToShow: 4,
-                    slidesToScroll: 1,
+                    slidesToScroll: 4,
+                },
+            },
+            {
+                breakpoint: 834,
+                settings: {
+                    swipe: true,
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
                 },
             },
             {
                 breakpoint: 360,
                 settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1,
+                    swipe: true,
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
                 },
             },
         ],

@@ -5,6 +5,10 @@
         display: flex;
         flex-flow: column nowrap;
         padding: 60px 0 57px 0;
+
+        @media (max-width: 1280px) {
+            padding: 60px 105px 57px 105px;
+        }
     }
 
     &__slide {
