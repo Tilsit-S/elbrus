@@ -18,14 +18,38 @@
         flex-flow: row wrap;
         gap: 7px;
         padding: 0 0 5px 0;
+
+        @media (max-width: 828px) {
+            justify-content: space-between;
+        }
+
+        @media (max-width: 500px) {
+            justify-content: space-between;
+        }
     }
 
     &__item {
-        width: 287px;
-        height: 243px;
+        width: 24.4%;
+        height: auto;
+
+        @media (max-width: 1280px) {
+            width: 24%;
+        }
+
+        @media (max-width: 828px) {
+            width: 23%;
+        }
+
+        @media (max-width: 600px) {
+            width: 48%;
+        }
 
         &:not(:last-child) {
             margin: 0 2px 0 0;
+
+            @media (max-width: 500px) {
+                margin: 0;
+            }
         }
     }
 
@@ -34,14 +58,11 @@
         display: flex;
         flex-flow: column nowrap;
         justify-content: flex-start;
-        padding: 17px;
     }
 
     &__imageWrapper {
         @include image-wrapper;
-        position: absolute;
-        top: 0;
-        left: 0;
+        position: relative;
         z-index: -1;
 
         img {
@@ -51,10 +72,26 @@
     }
 
     &__cardLink {
+        position: absolute;
+        top: 18px;
+        left: 16px;
         font-weight: 600;
         font-size: 20px;
         line-height: 130%;
         color: $black;
+
+        @media (max-width: 1280px) {
+            font-size: 16px;
+        }
+
+        @media (max-width: 1050px) {
+            top: 10px;
+            left: 10px;
+        }
+
+        @media (max-width: 500px) {
+            font-size: 14px;
+        }
 
         &:hover {
             color: $orange;

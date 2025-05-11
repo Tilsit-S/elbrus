@@ -87,4 +87,8 @@
     @media (max-width: $tablet-width) {
         font-size: 24px;
     }
+
+    @media (max-width: 480) {
+        font-size: 20px;
+    }
 }
