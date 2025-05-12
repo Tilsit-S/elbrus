@@ -21,7 +21,6 @@ $(document).ready(function(){
             {
                 breakpoint: 960,
                 settings: {
-                    swipe: true,
                     slidesToShow: 4,
                     slidesToScroll: 4,
                 },
@@ -29,7 +28,6 @@ $(document).ready(function(){
             {
                 breakpoint: 834,
                 settings: {
-                    swipe: true,
                     slidesToShow: 2,
                     slidesToScroll: 2,
                 },
@@ -37,7 +35,6 @@ $(document).ready(function(){
             {
                 breakpoint: 360,
                 settings: {
-                    swipe: true,
                     slidesToShow: 3,
                     slidesToScroll: 3,
                 },
