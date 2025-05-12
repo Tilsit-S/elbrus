@@ -1,6 +1,5 @@
-.advice {
+.catalog {
     overflow: hidden;
-    margin-bottom: 12px;
 
     &__title {
         @include title;
@@ -81,42 +80,6 @@
     }
     // sliderEnd
 
-    &__content {
-        padding: 0 0 50px 0;
-    }
-
-    &__advices-list {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-between;
-        gap: 10px;
-    }
-
-    &__advices-item {
-        position: relative;
-        width: 24.3%;
-
-        @media (max-width: 1279px) {
-            width: 24%;
-        }
-
-        @media (max-width: 1000px) {
-            width: 32%;
-        }
-
-        @media (max-width: 768px) {
-            width: 49%;
-        }
-
-        @media (max-width: 768px) {
-            width: 48%;
-        }
-
-        @media (max-width: 500px) {
-            width: 100%;
-        }
-    }
-
     &__tabs-item {
         display: flex;
         flex-shrink: 0;
@@ -149,6 +112,10 @@
         }
     }
 
+    &__content {
+
+    }
+
     &__content-item {
         position: absolute;
         display: none;
@@ -156,6 +123,37 @@
         &.active {
             position: relative;
             display: flex;
+        }
+    }
+
+    &__catalog-list {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    &__catalog-item {
+        width: 24.3%;
+
+        @media (max-width: 1279px) {
+            width: 24%;
+        }
+
+        @media (max-width: 1000px) {
+            width: 32%;
+        }
+
+        @media (max-width: 768px) {
+            width: 49%;
+        }
+
+        @media (max-width: 768px) {
+            width: 48%;
+        }
+
+        @media (max-width: 500px) {
+            width: 100%;
         }
     }
 }

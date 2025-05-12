@@ -11,7 +11,7 @@
             padding: 50px 105px;
         }
 
-        @media (max-width: 960px) {
+        @media (max-width: 1100px) {
             padding: 50px 77px;
         }
 
@@ -28,10 +28,24 @@
         }
     }
 
+    &__tablet {
+        display: none;
+
+        @media (max-width: 800px) {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+        }
+    }
+
     &__infoBlock {
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-between;
+
+        @media (max-width: 800px) {
+            display: none;
+        }
     }
 
     &__logo {
@@ -48,6 +62,13 @@
         text-align: center;
         width: 11%;
         margin: 0 10px 0 0;
+
+        @media (max-width: 1110px) {
+            width: 20%;
+        }
+
+        @media (max-width: 960px) {
+        }
     }
 
     &__sloganText {
@@ -66,6 +87,19 @@
         width: 66.5%;
         padding: 12px 161px 0 0;
         margin: 0 0 43px 0;
+
+        @media (max-width: 1260px) {
+            padding: 12px 20px 0 0;
+        }
+
+        @media (max-width: 1110px) {
+            width: 70%;
+            padding: 12px 0 0 0;
+        }
+
+        @media (max-width: 900px) {
+            width: 74%;
+        }
     }
 
     &__contactsBlock {
@@ -102,7 +136,7 @@
             margin: 0 0 15px 0;
         }
     }
-    
+
     &__contactsList {
 
         &:not(:last-child) {
@@ -139,10 +173,98 @@
         font-size: 12px;
         margin: 0 0 40px 0;
     }
-}
 
-@media (max-width: $tablet-width) {
-    .footer {
+    /*-------------------tablet--------------------*/
 
+    &__tabletList {
+        display: flex;
+        flex-flow: row wrap;
+        width: 70%;
+        height: fit-content;
+        gap: 9px;
+
+        @media (max-width: 500px) {
+            flex-flow: column wrap;
+        }
+    }
+
+    &__tabletItem {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        width: 45%;
+        height: max-content;
+        border: 1px solid #a9a9a9;
+        border-radius: 6px;
+        padding: 8px 12px;
+
+        @media (max-width: 500px) {
+            width: 100%;
+        }
+    }
+
+    &__item-question {
+        position: relative;
+        display: block;
+        width: 100%;
+        font-weight: 400;
+        font-size: 14px;
+
+        &::before {
+            position: absolute;
+            top: 9px;
+            right: 11px;
+            content: "";
+            display: block;
+            width: 6px;
+            height: 1px;
+            background-color: $white;
+            transform: rotate(135deg);
+        }
+
+        &::after {
+            position: absolute;
+            top: 4px;
+            right: 11px;
+            content: "";
+            display: block;
+            width: 6px;
+            height: 1px;
+            background-color: $white;
+            transform: rotate(45deg);
+        }
+    }
+
+    &__item-answer {
+        display: none;
+        padding: 8px 0 23px 0;
+
+        p {
+            padding-right: 20px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 26px;
+
+            &:nth-child(1) {
+                margin-bottom: 16px;
+            }
+        }
+    }
+
+    &__item-checkbox:checked ~ .footer__item-answer {
+        display: block;
+    }
+
+    &__item-checkbox:checked ~ .footer__item-question {
+
+        &::before {
+            transform: rotate(45deg);
+        }
+        &::after {
+            transform: rotate(135deg);
+            top: 9px;
+            right: 6px;
+        }
     }
 }
