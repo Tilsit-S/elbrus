@@ -7,7 +7,7 @@ $(document).ready(function(){
         infinite: false,
         slidesToShow: 3,
         slidesToScroll: 1,
-        swipe: false,
+        swipe: true,
         responsive: [
             {
                 breakpoint: 800,
@@ -24,9 +24,11 @@ $(document).ready(function(){
                     slidesToShow: 1,
                     slidesToScroll: 1,
                     dots: true,
+                    swipe: true,
                 },
             },
         ],
     }
     );
 });
+

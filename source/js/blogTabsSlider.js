@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $('.blog__tabs').slick({
+    $('.blog__tabsSlider').slick({
         arrows: false,
         dots: false,
         variableWidth: true,
@@ -14,13 +14,14 @@ $(document).ready(function(){
                 breakpoint: 1080,
                 settings: {
                     swipe: true,
-                    slidesToShow: 1,
+                    //slidesToShow: 4,
                     slidesToScroll: 1,
                 },
             },
             {
                 breakpoint: 960,
                 settings: {
+                    swipe: true,
                     slidesToShow: 4,
                     slidesToScroll: 4,
                 },
@@ -28,6 +29,7 @@ $(document).ready(function(){
             {
                 breakpoint: 834,
                 settings: {
+                    swipe: true,
                     slidesToShow: 2,
                     slidesToScroll: 2,
                 },
@@ -35,6 +37,7 @@ $(document).ready(function(){
             {
                 breakpoint: 360,
                 settings: {
+                    swipe: true,
                     slidesToShow: 3,
                     slidesToScroll: 3,
                 },

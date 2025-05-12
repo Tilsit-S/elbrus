@@ -93,24 +93,26 @@
     .slick-slider.slick-initialized{}
 
     /* Слайдер с точками */
-    .slick-slider.slick-dotted{}
+    //.slick-slider.slick-dotted{}
 
     .slick-list {
-        //height: 243px;
+        overflow: hidden;
+        margin: 0 auto;
     }
 
     /* Ограничивающая оболочка */
     .slick-list {
-        overflow: visible;
+        overflow: hidden;
         margin: 0 auto;
-        /* margin-bottom: 31px; */
-        margin: 0 0 10px 0;
+        margin-bottom: 10px;
+        //margin: 0 0 10px 0;
     }
 
     /* Лента слайдов */
     .slick-track{
         display: flex;
         flex-direction: row;
+        width: 100%;
         align-items: flex-start;
         margin-bottom: 20px;
     }
